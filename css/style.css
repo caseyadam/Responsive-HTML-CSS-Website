@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=LOBSTER"/>
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 25px;
+}
+html {
+    font-family: "Calibri", sans-serif;
+}
+.header {
+    background-color: purple; /*#e2e2e2*/
+    color: #999999;
+    padding: 15px;
+}
+h1 {
+   text-align: center;
+   color: #66b8e2;
+   font-size: 3em;
+   font-family: Lobster;
+}
+h3 {
+  color:#3f3f3f;
+}
+#price {
+  font-weight:bold;
+}
+a {
+    text-decoration: none;
+    color: #999999;
+}
+#sidebar-title {
+  margin-bottom: 15%;
+  font-family:;
+}
+.img-circle {
+   border-radius: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 10%;
+    padding: 0;
+}
+.menu li {
+    padding: 12px;
+    margin-bottom: 7px;
+    background-color: white;
+    color: #999999;
+    font-weight: 700;
+}
+.menu li:hover {
+    color: #3f3f3f;
+}
+/* SIDEBAR FOOTER */
+.footer {
+    display: table-cell;
+    vertical-align: bottom;
+    height: 550px;
+    width: 400px;
+    color: #999999;
+}
+hr.style7 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+#assistance {
+  color: #3f3f3f;
+}
+#faq {
+  color:#66b8e2;
+}
+
+/* MAIN RIGHT SIDE AREA */
+.col-10 {
+    background-color: #e2e2e2;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+/* http://www.menucool.com/ui/responsive-image-grid-with-hover-effect DELETED*/
+/* http://alijafarian.com/responsive-image-grids-using-css/ */
+    ul.rig {
+    	list-style: none;
+    	font-size: 0px;
+    	margin-left: -2.5%; /* should match li left margin */
+    }
+    ul.rig li {
+    	display: inline-block;
+    	padding: 10px;
+    	margin: 0 0 2.5% 2.5%;
+    	background: #fff;
+    	border: 1px solid #ddd;
+    	font-size: 16px;
+    	font-size: 1rem;
+    	vertical-align: top;
+    	box-shadow: 0 0 5px #ddd;
+    	box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    }
+    ul.rig li img {
+    	max-width: 100%;
+    	/*height: auto;*/
+    	margin: 0 0 10px;
+    position: relative;
+    float: left;
+    width:  400px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    }
+    ul.rig li h3 {
+    	margin: 0 0 5px;
+    }
+    ul.rig li p {
+    	font-size: .9em;
+    	line-height: 1.5em;
+    	color: #999;
+    }
+    /* class for 2 columns */
+    ul.rig.columns-2 li {
+    	width: 47.5%; /* this value + 2.5 should = 50% */
+    }
+    /* class for 3 columns */
+    ul.rig.columns-3 li {
+    	width: 30.83%; /* this value + 2.5 should = 33% */
+    }
+    /* class for 4 columns */
+    ul.rig.columns-4 li {
+    	width: 22.5%; /* this value + 2.5 should = 25% */
+    }
+     
+    @media (max-width: 480px) {
+    	ul.grid-nav li {
+    		display: block;
+    		margin: 0 0 5px;
+    	}
+    	ul.grid-nav li a {
+    		display: block;
+    	}
+    	ul.rig {
+    		margin-left: 0;
+    	}
+    	ul.rig li {
+    		width: 100% !important; /* over-ride all li styles */
+    		margin: 0 0 20px;
+    	}
+    }
+
+/* END PHOTO GRID */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
